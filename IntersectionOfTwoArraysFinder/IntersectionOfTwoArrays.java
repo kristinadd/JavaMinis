@@ -18,7 +18,6 @@ public class IntersectionOfTwoArrays {
       set1.add(num);
     }
 
-
     return new int[0]; 
   }
 }
