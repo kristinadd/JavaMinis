@@ -23,7 +23,18 @@ public class DateTest {
     int day = date3.getDayOfMonth();
     int day2 = date3.getDayOfYear();
     DayOfWeek day4 = date3.getDayOfWeek();
-    int month = date3.getDayOfMonth();
+    int monthValue = date3.getDayOfMonth();
     int year = date3.getYear();
+
+    //  The original object remains unchanged. We say that the plusDays method does not mutate the object on which it is invoked
+    LocalDate plus100 =  date3.plusDays(100);
+    System.out.println(plus100);
+    System.out.println(date3);
+
+    // Print calendar with a current date
+    LocalDate datE = LocalDate.now();
+    int month = datE.getMonthValue();
+    int today = datE.getDayOfMonth();
+
  }
 }
