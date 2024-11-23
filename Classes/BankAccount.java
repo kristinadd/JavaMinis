@@ -8,10 +8,10 @@ public class BankAccount {
   private LocalDate creationDate;
 
   // Constructor 
-  public BankAccount(String accountNumber, double balance, LocalDate creationDate) {
+  public BankAccount(String accountNumber, double balance) {
     this.accountNumber = accountNumber;
     this.balance = balance;
-    this.creationDate = creationDate;
+    this.creationDate = LocalDate.now();
   }
 
   public double getBalance() {
@@ -19,8 +19,17 @@ public class BankAccount {
   }
 
   public void deposit(double amount) {
-    balance += amount;
+    if (amount > 0) {
+      balance += amount;
+      System.out.println("Deposited " + amount + ". New Balnce is " + balance);
+    } else {
+      System.out.println("Deposit amount must be possitive.");
+    }
   }
-  
 
+  public String getAccountNumber() {
+    return accountNumber;
+  }
+
+  
 }
