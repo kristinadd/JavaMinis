@@ -10,6 +10,8 @@ public class NullTesting {
     System.out.println(s.toString());
     // Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.toString()" because "Null.NullTesting.s" is null
     // at Null.NullTesting.main(NullTesting.java:10)
+
+    
   }
   
 }
