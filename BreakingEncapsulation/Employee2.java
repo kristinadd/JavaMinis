@@ -14,6 +14,11 @@ public class Employee2 {
   }
   // Return a defensive copy to protect internal state
   // return new Date(hireDay.getTime());
+
+  // In the Book:
+  // As a rule of thumb, always use clone whenever you need to return a copy of a mutable field.
+  // return (Date) hireDay.clone();
+
 }
 
 // You’re not creating an arbitrary new Date; you’re creating a new instance with the same value as the original, 
