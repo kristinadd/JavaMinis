@@ -35,7 +35,8 @@ public class BankAccount {
     return accountNumber;
   }
 
-// "Whenever you accept an object reference as a construction parameter": This means whenever your class takes an object (like a String, List, or a custom class like BankAccount) as an argument in a constructor, you should be mindful of whether you’re allowing it to be null.
+// "Whenever you accept an object reference as a construction parameter": This means whenever your class takes an object (like a String, List, or a custom class like BankAccount) 
+// as an argument in a constructor, you should be mindful of whether you’re allowing it to be null.
 
 // "Ask yourself whether you really intend to model values that can be present or absent": Think about whether it makes sense for this object reference to be optional. For example:
 
