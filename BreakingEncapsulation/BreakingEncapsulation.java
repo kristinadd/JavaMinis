@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
-public class BreakingEncapsulation {
+public class BreakingEncapsulation { // Page 234
   // The issue is about breaking encapsulation when an object’s private field is directly or indirectly modified through an accessor method (getter). 
  // Encapsulation is a core principle of object-oriented programming that ensures an object's internal state is only changed in controlled and predictable ways.
   
@@ -23,7 +23,7 @@ public class BreakingEncapsulation {
     return hireDay; // BAD: This exposes the mutable Date object
   }
 
-  // Here’s what happens when you use this code:
+  // Here’s what happens when the code is used:
   public static void main(String[] args) {
     BreakingEncapsulation breakingEncapsulation = new BreakingEncapsulation();
     Employee harry = breakingEncapsulation.new Employee(new Date());
