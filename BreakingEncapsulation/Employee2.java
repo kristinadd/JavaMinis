@@ -31,3 +31,4 @@ public class Employee2 {
 //Fix:
 // Constructor: Use defensive copying to store a new instance of the object in the field.
 // Getter: Return a defensive copy to ensure external code cannot modify the internal object.
+
