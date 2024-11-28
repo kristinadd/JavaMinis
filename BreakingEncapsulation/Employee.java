@@ -3,6 +3,7 @@ package BreakingEncapsulation;
 import java.util.Date;
 
 public class Employee {
+  private int vacationDays;
   private Date hireDay; // Date is mutable
   // What private does: Prevents direct access or reassignment of the field outside the class.
 
@@ -11,7 +12,8 @@ public class Employee {
     // }
 
     public Employee() {
-        this.hireDay = new Date(); 
+        this.hireDay = new Date();
+        this.vacationDays = 17;
         // Still bad because the getHireDay() method exposes the reference to the mutable Date object stored in the hireDay field. 
         // Even though you’ve removed the constructor that takes a Date as an argument and now initialize hireDay to a new Date() 
         // in the default constructor, the getHireDay() method still allows external code to modify the internal state of the Employee object.
@@ -23,5 +25,9 @@ public class Employee {
         // Because Date is mutable, external code can modify it, breaking encapsulation.
 
         // return new Date(hireDay.getTime());
+    }
+
+    public int getVacationDays() {
+        return vacationDays;
     }
 }
