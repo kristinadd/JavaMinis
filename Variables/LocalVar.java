@@ -11,5 +11,6 @@ public class LocalVar {
     // System.out.println(y);  ERROR: y is out of scope
   }
 }
-// Local Variables are specific to the block where they are defined
-// Local Variables don't have access modifiers like private pr public 
+  // Local Variables are specific to the block where they are defined
+  // Local Variables don't have access modifiers like private pr public 
+  
