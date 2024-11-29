@@ -7,12 +7,14 @@ public class Employee {
   public int age;
   public static int employeeCount = 0; // static variable; belongs to the class
   private static LocalDate startDate;
+  public final int luckyNumber;
 
-  public Employee(String name, int age) {
+  public Employee(String name, int age, int luckyNumber) {
     this.name = name; //assigning the variable
     this.age = age;
     employeeCount ++;
     startDate = LocalDate.now();
+    this.luckyNumber = luckyNumber;
   }
 
   public void displayInfo() {
@@ -33,7 +35,6 @@ public class Employee {
 
   // Static fields represent class-level data, meaning they do not require an instance of the class.
   // A static getter ensures that the field can be accessed consistently without requiring an instance of the class.
-
 
 }
 
