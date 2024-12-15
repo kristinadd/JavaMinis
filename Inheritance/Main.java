@@ -6,5 +6,7 @@ public class Main {
 
     // System.out.println(manager.name); the field is private
     System.out.println(manager.getName());
+
+    System.out.println(manager.getMSalary());
   }
 }

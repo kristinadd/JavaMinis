@@ -7,4 +7,14 @@ public class Manager extends Employee {
     super(name, salary);
     this.bonus = bonus;
   }
+
+  public double getMSalary() {
+    double baseSalary = getSalary();
+    return baseSalary + bonus;
+  }
+
+  public double getSalary() {
+    double baseSalary = super.getSalary(); // recursive need to specify it's called on the super class
+    return baseSalary + bonus;
+  }
 }
