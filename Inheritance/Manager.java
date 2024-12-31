@@ -13,6 +13,7 @@ public class Manager extends Employee {
   //   return baseSalary + bonus;
   // }
 
+  @Override
   public double getSalary() {
     double baseSalary = super.getSalary(); // recursive need to specify it's called on the super class
     return baseSalary + bonus;

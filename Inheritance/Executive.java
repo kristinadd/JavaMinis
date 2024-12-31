@@ -7,4 +7,8 @@ public class Executive extends Manager {
     super(name, salary, bonus);
     this.stockOptions = stockOptions;
   }
+
+  public double getStockOptions() {
+    return stockOptions;
+  }
 }
