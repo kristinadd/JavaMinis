@@ -3,7 +3,7 @@ package SlidingWindowProblem;
 public class AdvancedSlidingWindow{
 
   public static void main(String[] args) {
-    int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int[] nums = {15, 10, 10, 4, 5, 6, 7, 8, 9, 10};
     int windowSize = 3;
 
     int largestSum = findWindowSum(nums, windowSize);
