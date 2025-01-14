@@ -19,7 +19,7 @@ public class Main {
 
     System.out.println(list);
 
-    Collections.sort(list); // sort in natural order
+    Collections.sort(list); // sort in natural order // modifies the list
     System.out.println(list);
 
     Collections.reverse(list);
